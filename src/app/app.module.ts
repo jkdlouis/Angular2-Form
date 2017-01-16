@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule  } from '@angular/platform-browser';
-
 import { AppComponent }   from './app.component';
-import { TemplateDrivenComponent } from "./template-driven/template-driven.component";
+import { DataDrivenComponent } from "./data-driven/data-driven.component";
 
 
 @NgModule({
-    declarations: [AppComponent, TemplateDrivenComponent],
-    imports: [BrowserModule, FormsModule],
+    declarations: [AppComponent, DataDrivenComponent],
+    imports: [BrowserModule, FormsModule, ReactiveFormsModule],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
